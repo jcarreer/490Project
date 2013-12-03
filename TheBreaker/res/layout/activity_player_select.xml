@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PlayerSelect" >
+    
+    <TextView
+        android:id="@+id/player1wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/playerselect_header"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/b.2player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player1wins"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background ="@drawable/2player"
+        android:text="@string/button_2player"
+        android:onClick="twoplayer" />
+
+    <Button
+        android:id="@+id/b.3player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b.2player"
+        android:layout_below="@+id/b.2player"
+        android:layout_marginTop="32dp"
+        android:background ="@drawable/3player"
+        android:text="@string/button_3player"
+        android:onClick="threeplayer" />
+
+    <Button
+        android:id="@+id/b.4player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b.3player"
+        android:layout_below="@+id/b.3player"
+        android:layout_marginTop="32dp"
+        android:background ="@drawable/4player"
+        android:text="@string/button_4player"
+        android:onClick="fourplayer" />
+
+
+
+</RelativeLayout>
