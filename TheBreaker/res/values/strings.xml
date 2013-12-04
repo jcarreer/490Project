@@ -9,5 +9,10 @@
     <string name="button_2player">2 Player</string>
     <string name="button_3player">3 Players</string>
     <string name="button_4player">4 Players</string>
+    <string name="button_rockpapersci">Rock Paper Scissors</string>
+    <string name="button_dice">Roll Dice</string>
+    <string name="button_randnumber">Random Number</string>
+    <string name="button_cointoss">Coin Toss</string>
+    <string name="main_header">What will Break your Tie?</string>
 
 </resources>

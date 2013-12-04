@@ -8,9 +8,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+     <Button
+        android:id="@+id/b.dice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@+id/b.rockpapersci"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/button_dice" 
+        android:background="@drawable/dice"
+        android:onClick="dice"/>
+
+    <Button
+        android:id="@+id/b.cointoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b.randnumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/button_cointoss"
+        android:background="@drawable/coin" 
+        android:onClick="cointoss"/>
+
+    <TextView
+        android:id="@+id/tv.Main.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/main_header"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/b.rockpapersci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b.randnumber"
+        android:layout_below="@+id/tv.Main.1"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/rps"
+        android:onClick="rockpapersci"
+        android:text="@string/button_rockpapersci" />
+
+    <Button
+        android:id="@+id/b.randnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b.dice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:onClick="randnumber"
+        android:text="@string/button_randnumber" />
 
 </RelativeLayout>
