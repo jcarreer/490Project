@@ -34,7 +34,7 @@ public final class R {
         public static final int twoplayer=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f080009;
+        public static final int action_settings=0x7f08000e;
         public static final int b_2player=0x7f080006;
         public static final int b_3player=0x7f080007;
         public static final int b_4player=0x7f080008;
@@ -42,16 +42,23 @@ public final class R {
         public static final int b_dice=0x7f080000;
         public static final int b_randnumber=0x7f080003;
         public static final int b_rockpapersci=0x7f080001;
+        public static final int b_round1=0x7f08000a;
+        public static final int b_round2=0x7f08000b;
+        public static final int b_round3=0x7f08000c;
+        public static final int b_round4=0x7f08000d;
+        public static final int header_roundsselect=0x7f080009;
         public static final int player1wins=0x7f080005;
         public static final int tv_Main_1=0x7f080004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_player_select=0x7f030001;
+        public static final int activity_rounds_select=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;
         public static final int player_select=0x7f070001;
+        public static final int rounds_select=0x7f070002;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -66,6 +73,11 @@ public final class R {
         public static final int hello_world=0x7f050002;
         public static final int main_header=0x7f05000c;
         public static final int playerselect_header=0x7f050004;
+        public static final int round1=0x7f05000d;
+        public static final int round2=0x7f05000e;
+        public static final int round3=0x7f05000f;
+        public static final int round4=0x7f050010;
+        public static final int roundsselect_header=0x7f050011;
         public static final int title_activity_player_select=0x7f050003;
     }
     public static final class style {

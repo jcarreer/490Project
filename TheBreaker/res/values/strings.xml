@@ -14,5 +14,10 @@
     <string name="button_randnumber">Random Number</string>
     <string name="button_cointoss">Coin Toss</string>
     <string name="main_header">What will Break your Tie?</string>
+    <string name="round1">1 Wim</string>
+    <string name="round2">2 Wins</string>
+    <string name="round3">3 Wins</string>
+    <string name="round4">4 Wins</string>
+    <string name="roundsselect_header">How Many Wins to Break the Tie?</string>
 
 </resources>

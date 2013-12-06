@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RoundsSelect" >
+
+    <TextView
+        android:id="@+id/header_roundsselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/roundsselect_header" />
+
+    <Button
+        android:id="@+id/b.round1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_roundsselect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/round1" 
+        android:onClick="round1"/>
+
+    <Button
+        android:id="@+id/b.round2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b.round1"
+        android:layout_below="@+id/b.round1"
+        android:layout_marginTop="32dp"
+        android:text="@string/round2" 
+        android:onClick="round2"/>
+
+    <Button
+        android:id="@+id/b.round3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b.round2"
+        android:layout_below="@+id/b.round2"
+        android:layout_marginTop="32dp"
+        android:text="@string/round3"
+        android:onClick="round3" />
+
+    <Button
+        android:id="@+id/b.round4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b.round3"
+        android:layout_below="@+id/b.round3"
+        android:layout_marginTop="32dp"
+        android:text="@string/round4" 
+        android:onClick="round4"/>
+
+</RelativeLayout>
