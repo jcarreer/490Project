@@ -2,6 +2,7 @@ package com.joshcarreer.thebreaker;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -48,9 +49,9 @@ public class PlayerSelect extends Activity {
 		playerselect();
 	}
 	
-	public void playerselect(){
-		
-	}
+	public void playerselect(){	Intent roundsselect = new Intent (this, RoundSelect.class);
+	startActivity(roundsselect);
+}
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
