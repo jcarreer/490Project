@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DieSelect" >
+
+    
+    <TextView
+        android:id="@+id/tv.DieSelect.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/dieselect_header"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_4side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv.DieSelect.1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background ="@drawable/d4"
+        android:text="@string/button_4side" 
+        android:onClick="die4"/>
+
+    <Button
+        android:id="@+id/button_20side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button_12side"
+        android:layout_below="@+id/button_12side"
+        android:layout_marginTop="32dp"
+        android:background ="@drawable/d20"
+        android:text="@string/button_20side" 
+        android:onClick="die20"/>
+
+    <Button
+        android:id="@+id/button_12side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_6side"
+        android:layout_below="@+id/button_6side"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/d12"
+        android:onClick="die12"
+        android:text="@string/button_12side" />
+
+    <Button
+        android:id="@+id/button_6side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_4side"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dice"
+        android:onClick="die6"
+        android:text="@string/button_6side" />
+    
+</RelativeLayout>
