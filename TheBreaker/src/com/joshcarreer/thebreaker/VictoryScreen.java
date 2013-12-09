@@ -1,31 +1,51 @@
 package com.joshcarreer.thebreaker;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
 
 import com.joshcarreer.thebreaker.R;
 
-public class CoinTossSelect extends Activity {
+public class VictoryScreen extends Activity {
+
+
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_coin_toss_select);
+		setContentView(R.layout.activity_victory_screen);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		String activity, winner;
+		if(MainActivity.Options[4] == "0"){
+			winner = "Player 1";
+		}else if(MainActivity.Options[4] == "1"){
+			winner = "Player 2";
+		}else if(MainActivity.Options[4] == "2"){
+			winner = "Player 3";
+		}else winner = "Player 4";
+		
+		if(MainActivity.Options[0]=="0"){
+			activity = "Rock Paper Scissors";
+		}else if(MainActivity.Options[0]=="1"){
+			activity = "Dice Roll";
+		}else if(MainActivity.Options[0]=="2"){
+			activity = "Random Number";
+		}else activity = "Coin Flip";
+		
+		TextView victoryp = new TextView(this);
+		victoryp = (TextView) findViewById(R.id.victoryplayer);
+		victoryp.setText(winner + " wins the");
+		
+		TextView victorya = new TextView(this);
+		victorya = (TextView) findViewById(R.id.victoryactivity);
+		victorya.setText(activity + " challenge!");
+		
+		
 	}
-	public void heads(View view){
-		Intent cointoss = new Intent (this, CoinToss.class);
-		MainActivity.Options[3] = "0";
-		startActivity(cointoss);}
-	
-	public void tails(View view){
-		Intent cointoss = new Intent (this, CoinToss.class);
-		MainActivity.Options[3] = "1";
-		startActivity(cointoss);}
+
 	/**
 	 * Set up the {@link android.app.ActionBar}.
 	 */
@@ -38,7 +58,7 @@ public class CoinTossSelect extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.coin_toss_select, menu);
+		getMenuInflater().inflate(R.menu.victory_screen, menu);
 		return true;
 	}
 
@@ -60,5 +80,3 @@ public class CoinTossSelect extends Activity {
 	}
 
 }
-
-
