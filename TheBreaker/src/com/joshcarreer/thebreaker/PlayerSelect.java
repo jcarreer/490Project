@@ -1,5 +1,9 @@
 package com.joshcarreer.thebreaker;
 
+import com.joshcarreer.thebreaker.MainActivity;
+import com.joshcarreer.thebreaker.R;
+import com.joshcarreer.thebreaker.RoundSelect;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
@@ -11,7 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class PlayerSelect extends Activity {
-	
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_player_select);
@@ -49,9 +53,10 @@ public class PlayerSelect extends Activity {
 		playerselect();
 	}
 	
-	public void playerselect(){	Intent roundsselect = new Intent (this, RoundSelect.class);
-	startActivity(roundsselect);
-}
+	public void playerselect(){
+		Intent roundsselect = new Intent (this, RoundSelect.class);
+		startActivity(roundsselect);
+	}
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -71,5 +76,4 @@ public class PlayerSelect extends Activity {
 	}
 
 }
-
 

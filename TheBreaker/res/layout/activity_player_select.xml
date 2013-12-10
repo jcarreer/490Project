@@ -25,7 +25,6 @@
         android:layout_below="@+id/player1wins"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:background ="@drawable/twoplayer"
         android:text="@string/button_2player"
         android:onClick="twoplayer" />
 
@@ -36,7 +35,6 @@
         android:layout_alignRight="@+id/b.2player"
         android:layout_below="@+id/b.2player"
         android:layout_marginTop="32dp"
-        android:background ="@drawable/threeplayer"
         android:text="@string/button_3player"
         android:onClick="threeplayer" />
 
@@ -47,7 +45,6 @@
         android:layout_alignLeft="@+id/b.3player"
         android:layout_below="@+id/b.3player"
         android:layout_marginTop="32dp"
-        android:background ="@drawable/fourplayer"
         android:text="@string/button_4player"
         android:onClick="fourplayer" />
 

@@ -1,5 +1,9 @@
 package com.joshcarreer.thebreaker;
 
+import com.joshcarreer.thebreaker.PlayerSelect;
+import com.joshcarreer.thebreaker.RoundSelect;
+import com.joshcarreer.thebreaker.R;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,7 +24,6 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
 	public void rockpapersci(View view){
 		Intent playerselect = new Intent (this, PlayerSelect.class);
 		Options[0] = "0";
@@ -36,6 +39,11 @@ public class MainActivity extends Activity {
 		Options[0] = "2";
 		startActivity(playerselect);
 	}
+	public void cointoss(View view){
+		Intent roundsselect = new Intent (this, RoundSelect.class);
+		Options[0] = "3";
+		Options[1] = "2";
+		startActivity(roundsselect);
+	}
+	
 }
-
-
