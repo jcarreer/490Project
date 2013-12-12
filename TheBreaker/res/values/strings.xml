@@ -49,10 +49,10 @@
     <string name="player3result">result</string>
     <string name="player2result">result</string>
     <string name="player1result">result</string>
-    <string name="player1wins">wins</string>
-    <string name="player2wins">wins</string>
-    <string name="player3wins">wins</string>
-    <string name="player4wins">wins</string>
+    <string name="player1wins">Number of Wins</string>
+    <string name="player2wins">Number of Wins</string>
+    <string name="player3wins">Number of Wins</string>
+    <string name="player4wins">Number of Wins</string>
     <string name="tosscoin">Flip A Coin</string>
     <string name="coinlanded">The coin landed on</string>
     <string name="player1chose">Chose:   </string>
