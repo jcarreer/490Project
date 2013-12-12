@@ -22,6 +22,78 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.PlayerSelect"
+            android:label="@string/title_activity_player_select"
+            android:parentActivityName="com.joshcarreer.thebreaker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joshcarreer.thebreaker.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.RoundsSelect"
+            android:label="@string/title_activity_rounds_select"
+            android:parentActivityName="com.joshcarreer.thebreaker.PlayerSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joshcarreer.thebreaker.PlayerSelect" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.CoinTossSelect"
+            android:label="@string/title_activity_coin_toss_select"
+            android:parentActivityName="com.joshcarreer.thebreaker.RoundsSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tiebreaker.RoundsSelect" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.DieSelect"
+            android:label="@string/title_activity_die_select"
+            android:parentActivityName="com.joshcarreer.thebreaker.RoundsSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joshcarreer.thebreaker.RoundsSelect" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.RockPaperSci"
+            android:label="@string/title_activity_rock_paper_sci"
+            android:parentActivityName="com.joshcarreer.thebreaker.RoundsSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joshcarreer.thebreaker.RoundsSelect" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.RandNumber"
+            android:label="@string/title_activity_rand_number"
+            android:parentActivityName="com.joshcarreer.thebreaker.RoundsSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joshcarreer.thebreaker.RoundsSelect" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.CoinToss"
+            android:label="@string/title_activity_coin_toss"
+            android:parentActivityName="com.joshcarreer.thebreaker.CoinTossSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tiebreaker.CoinTossSelect" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.VictoryScreen"
+            android:label="@string/title_activity_victory_screen"
+            android:parentActivityName="com.joshcarreer.thebreaker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joshcarreer.thebreaker.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.joshcarreer.thebreaker.DiceRoll"
+            android:label="@string/title_activity_dice_roll"
+            android:parentActivityName="com.joshcarreer.thebreaker.DieSelect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.joshcarreer.thebreaker.DieSelect" />
+        </activity>
     </application>
 
 </manifest>
