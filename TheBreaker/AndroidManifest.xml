@@ -44,7 +44,7 @@
             android:parentActivityName="com.joshcarreer.thebreaker.RoundsSelect" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.tiebreaker.RoundsSelect" />
+                android:value="com.joshcarreer.thebreaker.RoundsSelect" />
         </activity>
         <activity
             android:name="com.joshcarreer.thebreaker.DieSelect"
@@ -76,7 +76,7 @@
             android:parentActivityName="com.joshcarreer.thebreaker.CoinTossSelect" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.tiebreaker.CoinTossSelect" />
+                android:value="com.joshcarreer.thebreaker.CoinTossSelect" />
         </activity>
         <activity
             android:name="com.joshcarreer.thebreaker.VictoryScreen"
